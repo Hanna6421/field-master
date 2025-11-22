@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Field Master</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2d5016 0%, #3a6b1f 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2d5016;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #3a6b1f;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #3a6b1f;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+        
+        p, li {
+            margin-bottom: 0.75rem;
+            color: #555;
+        }
+        
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        strong {
+            color: #2d5016;
+        }
+        
+        a {
+            color: #3a6b1f;
+            text-decoration: none;
+            border-bottom: 1px solid #3a6b1f;
+        }
+        
+        a:hover {
+            color: #2d5016;
+            border-bottom-color: #2d5016;
+        }
+        
+        .last-updated {
+            background: #f0f4e8;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #2d5016;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Field Master Privacy Policy</h1>
+        <p>Your AI-Powered Hunting & Fishing Companion</p>
+    </div>
+    
+    <div class="container">
+        <div class="last-updated">
+            <strong>Last Updated:</strong> November 22, 2025
+        </div>
+
+        <h2>Introduction</h2>
+        <p>Field Master ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>1. Location Data</h3>
+        <ul>
+            <li><strong>What we collect:</strong> GPS coordinates, location history during app use</li>
+            <li><strong>Why we collect it:</strong> To show your position on hunting maps, provide accurate local weather forecasts, and help you mark stands, blinds, and trail cameras</li>
+            <li><strong>How we use it:</strong> Location data is used only while the app is in use (foreground). We may cache coordinates locally for offline map functionality</li>
+            <li><strong>Storage:</strong> Location data is stored in our secure database (Supabase) and associated with your user account</li>
+        </ul>
+
+        <h3>2. Photos and Images</h3>
+        <ul>
+            <li><strong>What we collect:</strong> Trail camera photos you upload</li>
+            <li><strong>Why we collect it:</strong> To provide AI-powered wildlife analysis and hunting insights</li>
+            <li><strong>How we use it:</strong> Images are sent to OpenAI's API for analysis, then stored in our secure storage (Supabase)</li>
+            <li><strong>Third-party sharing:</strong> Images are processed by OpenAI's GPT-4 Vision API. See <a href="https://openai.com/privacy" target="_blank">OpenAI's privacy policy</a></li>
+        </ul>
+
+        <h3>3. Account Information</h3>
+        <ul>
+            <li><strong>What we collect:</strong> Email address, password (encrypted), user profile data</li>
+            <li><strong>Why we collect it:</strong> To create and manage your account, enable data sync across devices</li>
+            <li><strong>How we use it:</strong> Authentication is handled via Supabase Auth with industry-standard encryption</li>
+        </ul>
+
+        <h3>4. Usage Data</h3>
+        <ul>
+            <li><strong>What we collect:</strong> Species preferences, land boundaries, map markers, AI summary requests</li>
+            <li><strong>Why we collect it:</strong> To save your hunting/fishing data and provide personalized AI recommendations</li>
+            <li><strong>How we use it:</strong> This data is synced to the cloud to provide access across all your devices</li>
+        </ul>
+
+        <h3>5. Weather Data Requests</h3>
+        <ul>
+            <li><strong>What we collect:</strong> Location coordinates for weather lookups</li>
+            <li><strong>Third-party sharing:</strong> Requests are proxied through our secure backend to WeatherAPI.com</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>Field Master uses the following third-party services:</p>
+
+        <h3>1. Supabase (Database & Authentication)</h3>
+        <ul>
+            <li>Privacy Policy: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></li>
+            <li>What they receive: Email, encrypted password, user-generated content (land data, markers, photos)</li>
+        </ul>
+
+        <h3>2. OpenAI (AI Analysis)</h3>
+        <ul>
+            <li>Privacy Policy: <a href="https://openai.com/privacy" target="_blank">https://openai.com/privacy</a></li>
+            <li>What they receive: Trail camera images, species data, location context for generating recommendations</li>
+            <li>Data retention: See OpenAI's data retention policy</li>
+        </ul>
+
+        <h3>3. WeatherAPI.com (Weather Data)</h3>
+        <ul>
+            <li>Privacy Policy: <a href="https://www.weatherapi.com/privacy.aspx" target="_blank">https://www.weatherapi.com/privacy.aspx</a></li>
+            <li>What they receive: GPS coordinates for weather lookups (proxied through our backend)</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <ul>
+            <li><strong>Account data:</strong> Retained as long as your account is active</li>
+            <li><strong>Location history:</strong> Cached locally on your device; cloud copies retained with your account</li>
+            <li><strong>Photos:</strong> Stored until you delete them or close your account</li>
+            <li><strong>AI summaries:</strong> Retained with your account for historical reference</li>
+        </ul>
+
+        <h2>Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Access your personal data</li>
+            <li>Request deletion of your data (you can delete your account in the app settings)</li>
+            <li>Export your data (contact us for assistance)</li>
+            <li>Opt out of location tracking (disable in device settings)</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <p>We implement industry-standard security measures:</p>
+        <ul>
+            <li>All API keys stored securely on backend servers (never exposed to clients)</li>
+            <li>Passwords encrypted with industry-standard encryption</li>
+            <li>HTTPS encryption for all data transmission</li>
+            <li>Row Level Security (RLS) enabled on database</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Field Master is not intended for users under 13 years of age. We do not knowingly collect data from children under 13.</p>
+        <p><strong>Age Rating:</strong> 4+ (App Store) / Everyone (Google Play)</p>
+
+        <h2>In-App Purchases</h2>
+        <p>Field Master offers subscription-based in-app purchases:</p>
+        <ul>
+            <li>Subscriptions are managed through Apple App Store / Google Play Store</li>
+            <li>Payment processing is handled by Apple/Google (we do not store credit card information)</li>
+            <li>Subscription status is stored securely on your device for app access control</li>
+        </ul>
+
+        <h2>AI Usage Limits</h2>
+        <p>To ensure fair usage and control costs, Field Master limits AI-powered features to 100 requests per user per day. This limit resets automatically at midnight UTC. This includes:</p>
+        <ul>
+            <li>AI hunting/fishing summaries</li>
+            <li>Trail camera image analysis</li>
+        </ul>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, please contact us at:</p>
+        <ul>
+            <li><strong>Email:</strong> hello@fieldmasterhq.com</li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2025 Field Master. All rights reserved.</p>
+    </div>
+</body>
+</html>
